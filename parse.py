@@ -81,17 +81,8 @@ def parse_episode(path):
                         kind = "dialogue"
                         speaker = re.split(r"\s*\(", label)[0].strip()
                         text = text.strip('"').strip("“”")
-                    ep["items"].append({
-                        "kind": kind,
-                        "type": kind,
-                        "speaker": speaker,
-                        "start": to_sec(rm.group(1)),
-                        "start_sec": to_sec(rm.group(1)),
-                        "end": to_sec(rm.group(2)),
-                        "end_sec": to_sec(rm.group(2)),
-                        "text": text,
-                        "scene": scene,
-                    })
+                    ep["items"].append({"kind": kind, "speaker": speaker, "start": to_sec(rm.group(1)),
+                                        "end": to_sec(rm.group(2)), "text": text, "scene": scene})
                     i = j
                     continue
         i += 1
@@ -110,10 +101,6 @@ def load_folder(folder, limit=None):
 
 if __name__ == "__main__":
     import sys
-    data_dir = sys.argv[1] if len(sys.argv) > 1 else "data"
-    print(f"Parsing episodes from: {data_dir}")
-    episodes = load_folder(data_dir)
-    print(f"Total episodes found: {len(episodes)}\n")
-    for e in episodes:
+    for e in load_folder(sys.argv[1]):
         n_dlg = sum(1 for it in e["items"] if it["kind"] == "dialogue")
-        print(f"Episode {e['num']:>2}: scenes={len(e['scenes']):>2}, total_duration={e['duration']:>5.1f}s (items={len(e['items']):>3}, dialogue={n_dlg:>2})")
+        print(f"Ep {e['num']:>3}  scenes={len(e['scenes'])}  items={len(e['items'])}  dialogue={n_dlg}  duration={e['duration']:.1f}s")

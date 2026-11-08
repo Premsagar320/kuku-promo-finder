@@ -1,202 +1,577 @@
 [
   {
     "rank": 1,
-    "episodes": [
-      1
-    ],
+    "episode": 10,
     "segments": [
       {
-        "ep": 1,
-        "start": "01:30.9",
-        "end": "02:17.5",
-        "start_sec": 90.9,
-        "end_sec": 137.5
-      }
-    ],
-    "duration": 46.6,
-    "score": 8.4,
-    "hook": "The Matriarch shouts 'Enough!' and tells Juliana she has embarrassed the family.",
-    "cliffhanger": "Juliana's eyes harden with suppressed fury as strings swell to a black screen.",
-    "why": "Great high-stakes emotional beat with a definitive cinematic cliffhanger ending.",
-    "llm_score": 8,
-    "standalone_score": 4,
-    "hook_in_first_3s": true,
-    "heuristic": 9.5
-  },
-  {
-    "rank": 2,
-    "episodes": [
-      3
-    ],
-    "segments": [
+        "ep": 10,
+        "start": 72.1,
+        "end": 94.0
+      },
       {
-        "ep": 3,
-        "start": "00:20.6",
-        "end": "01:04.5",
-        "start_sec": 20.6,
-        "end_sec": 64.5
+        "ep": 11,
+        "start": 0.0,
+        "end": 20.0
       }
     ],
-    "duration": 43.9,
-    "score": 7.49,
-    "hook": "A rival woman says 'Now it is mine' about Juliana's wedding.",
-    "cliffhanger": "Guards forcefully grab Juliana and she screams 'Let me go!'",
-    "why": "Builds clear stakes of betrayal leading directly into the physical ejection and a strong cliffhanger struggle.",
-    "llm_score": 7,
-    "standalone_score": 4,
-    "hook_in_first_3s": true,
-    "heuristic": 8.5
-  },
-  {
-    "rank": 3,
-    "episodes": [
-      1
-    ],
-    "segments": [
-      {
-        "ep": 1,
-        "start": "00:46.8",
-        "end": "01:21.2",
-        "start_sec": 46.8,
-        "end_sec": 81.2
-      }
-    ],
-    "duration": 34.4,
-    "score": 7.27,
-    "hook": "Juliana accuses her family of letting her walk into the wedding in her mother's gown.",
-    "cliffhanger": "Juliana turns to her silent father and pleads 'Father... Tell them this is a mistake.'",
-    "why": "Excellent escalation involving the silent father adding another layer of betrayal.",
-    "llm_score": 7,
-    "standalone_score": 4,
-    "hook_in_first_3s": true,
-    "heuristic": 7.5
-  },
-  {
-    "rank": 4,
-    "episodes": [
-      2
-    ],
-    "segments": [
-      {
-        "ep": 2,
-        "start": "00:18.2",
-        "end": "01:00.5",
-        "start_sec": 18.2,
-        "end_sec": 60.5
-      }
-    ],
-    "duration": 42.3,
-    "score": 7.27,
-    "hook": "Juliana confronts Gerald over his vows, and he replies, 'Promises change when a better choice appears.'",
-    "cliffhanger": "Clarissa insults Juliana's mother's apothecary herbs just as Juliana's face hardens.",
-    "why": "Excellent villain dialogue and clear stakes, ending right as the sister crosses a cruel line.",
-    "llm_score": 7,
-    "standalone_score": 5,
-    "hook_in_first_3s": true,
-    "heuristic": 7.5
-  },
-  {
-    "rank": 5,
-    "episodes": [
-      3
-    ],
-    "segments": [
-      {
-        "ep": 3,
-        "start": "01:36.5",
-        "end": "02:25.8",
-        "start_sec": 96.5,
-        "end_sec": 145.75
-      }
-    ],
-    "duration": 49.2,
-    "score": 7.07,
-    "hook": "The matriarch shrieks 'You cannot interfere in a family matter!'",
-    "cliffhanger": "The stranger drops to one knee to propose while the congregation gasps.",
-    "why": "Great emotional arc with a high-stakes proposal cliffhanger, but misses a true 3-second hook.",
-    "llm_score": 8,
-    "standalone_score": 5,
-    "hook_in_first_3s": false,
-    "heuristic": 7.5
-  },
-  {
-    "rank": 6,
-    "episodes": [
-      3
-    ],
-    "segments": [
-      {
-        "ep": 3,
-        "start": "01:09.9",
-        "end": "01:31.6",
-        "start_sec": 69.9,
-        "end_sec": 91.6
-      }
-    ],
-    "duration": 21.7,
-    "score": 6.93,
-    "hook": "The bearded stranger commands, 'Take your hands off her.'",
-    "cliffhanger": "The stranger asks Juliana if she is hurt after easily dropping the guard.",
-    "why": "Starts with an authoritative command, features a cool combat beat, but ends slightly deflated after the punch.",
-    "llm_score": 7,
-    "standalone_score": 4,
+    "duration": 41.9,
+    "hook": "Alexander leans close, whispering 'Perhaps it is your hand' in the firelight.",
+    "cliffhanger": "Gerald accuses Alexander of stealing his gold pocket watch, leaving Juliana in disbelief.",
+    "why": "The ultimate promo clip: high romantic tension shifts instantly into a shocking false accusation, creating maximum outrage and cliffhanger value.",
+    "final": 9.33,
+    "llm_score": 10,
+    "standalone": 5,
     "hook_in_first_3s": true,
     "heuristic": 6.0
   },
   {
-    "rank": 7,
-    "episodes": [
-      1
-    ],
+    "rank": 2,
+    "episode": 32,
     "segments": [
       {
-        "ep": 1,
-        "start": "00:13.5",
-        "end": "00:37.7",
-        "start_sec": 13.5,
-        "end_sec": 37.7
+        "ep": 32,
+        "start": 119.6,
+        "end": 154.38
       }
     ],
-    "duration": 24.2,
-    "score": 4.98,
-    "hook": "Lady Juliana asks 'Why?' and says Gerald is waiting for her.",
-    "cliffhanger": "Juliana asks why Gerald is holding her hand.",
-    "why": "Too short and ends right as the central betrayal is being revealed.",
-    "llm_score": 4,
-    "standalone_score": 3,
+    "duration": 34.8,
+    "hook": "Catherine screams Silence in a crazed fury at Juliana.",
+    "cliffhanger": "Glowing branding iron stops millimeters from Juliana's eye.",
+    "why": "Fantastic hook with screaming villain, builds high tension, and ends on a visceral, life-or-death cliffhanger.",
+    "final": 9.2,
+    "llm_score": 9,
+    "standalone": 5,
+    "hook_in_first_3s": true,
+    "heuristic": 9.5
+  },
+  {
+    "rank": 3,
+    "episode": 42,
+    "segments": [
+      {
+        "ep": 42,
+        "start": 18.0,
+        "end": 77.5
+      }
+    ],
+    "duration": 59.5,
+    "hook": "Blond nobleman screams 'Guards! Arrest this imposter!'",
+    "cliffhanger": "Alexander vows to settle what Rupert stole, cutting right before the clash.",
+    "why": "Fantastic full arc: great hook, clear betrayal, emotional mother-son reveal, and an intense cliffhanger threat.",
+    "final": 9.2,
+    "llm_score": 9,
+    "standalone": 5,
+    "hook_in_first_3s": true,
+    "heuristic": 9.0
+  },
+  {
+    "rank": 4,
+    "episode": 23,
+    "segments": [
+      {
+        "ep": 23,
+        "start": 82.0,
+        "end": 131.2
+      }
+    ],
+    "duration": 49.2,
+    "hook": "Prudence asks 'Poison?' and Juliana hardens her expression to declare 'Arsenic'.",
+    "cliffhanger": "The door latch turns and the door begins to open as Juliana is caught with the unfinished cure.",
+    "why": "Excellent hook, clear stakes with arsenic, frantic preparation, and a high-tension physical cliffhanger at the door.",
+    "final": 9.09,
+    "llm_score": 9,
+    "standalone": 5,
+    "hook_in_first_3s": true,
+    "heuristic": 8.5
+  },
+  {
+    "rank": 5,
+    "episode": 27,
+    "segments": [
+      {
+        "ep": 27,
+        "start": 123.1,
+        "end": 150.5
+      },
+      {
+        "ep": 28,
+        "start": 0.0,
+        "end": 8.1
+      }
+    ],
+    "duration": 35.5,
+    "hook": "Lady Catherine maliciously twists Juliana's words to frame her for poisoning the Duchess.",
+    "cliffhanger": "Juliana is dragged away as Catherine steps on her dropped herbarium journal in the next segment.",
+    "why": "Exceptional vertical promo: opens with screaming villain accusation, clear framing, high injustice stakes, and cuts right into the next scene's humiliation.",
+    "final": 8.98,
+    "llm_score": 9,
+    "standalone": 5,
     "hook_in_first_3s": true,
     "heuristic": 8.0
   },
   {
-    "rank": 8,
-    "episodes": [
-      2,
-      3
-    ],
+    "rank": 6,
+    "episode": 44,
     "segments": [
       {
-        "ep": 2,
-        "start": "01:23.0",
-        "end": "01:50.0",
-        "start_sec": 83.0,
-        "end_sec": 110.0
+        "ep": 44,
+        "start": 51.1,
+        "end": 70.5
       },
       {
-        "ep": 3,
-        "start": "00:00.0",
-        "end": "00:16.3",
-        "start_sec": 0.0,
-        "end_sec": 16.3
+        "ep": 45,
+        "start": 0.0,
+        "end": 14.3
       }
     ],
-    "duration": 43.3,
-    "score": 4.91,
-    "hook": "Juliana warns Gerald not to mistake her heartbreak for his victory.",
-    "cliffhanger": "Clarissa taunts Juliana about clinging to her mother's locket as the next episode begins.",
-    "why": "Misses the initial 3-second hook, but bridges into the next episode with a strong continuation beat.",
-    "llm_score": 6,
-    "standalone_score": 4,
-    "hook_in_first_3s": false,
+    "duration": 33.7,
+    "hook": "Catherine cries out that she loved Alexander, who coldly rejects her.",
+    "cliffhanger": "Alexander kneels before Juliana and begins unfastening her heavy iron shackles.",
+    "why": "Fantastic emotional stakes, clear betrayal, shocking twist, and crosses into the next episode for a killer unfreezing cliffhanger.",
+    "final": 8.98,
+    "llm_score": 9,
+    "standalone": 5,
+    "hook_in_first_3s": true,
+    "heuristic": 8.0
+  },
+  {
+    "rank": 7,
+    "episode": 21,
+    "segments": [
+      {
+        "ep": 21,
+        "start": 87.7,
+        "end": 114.0
+      },
+      {
+        "ep": 22,
+        "start": 0.0,
+        "end": 28.1
+      }
+    ],
+    "duration": 54.4,
+    "hook": "Juliana tells Prudence her brother's breath is payment enough.",
+    "cliffhanger": "Prudence asks with dread what will happen if they discover who Juliana is.",
+    "why": "Spans across episodes with immense stakes, a forbidden undercover mission, and a high-tension cliffhanger.",
+    "final": 8.76,
+    "llm_score": 9,
+    "standalone": 5,
+    "hook_in_first_3s": true,
+    "heuristic": 7.0
+  },
+  {
+    "rank": 8,
+    "episode": 31,
+    "segments": [
+      {
+        "ep": 31,
+        "start": 131.0,
+        "end": 160.0
+      },
+      {
+        "ep": 32,
+        "start": 0.0,
+        "end": 24.8
+      }
+    ],
+    "duration": 53.8,
+    "hook": "Catherine yells 'Enough!' and destroys Juliana's mother's book with a red-hot poker.",
+    "cliffhanger": "Catherine's smug expression flickers with startled confusion when Juliana coldly tells her to 'Burn it.'",
+    "why": "Peak promo material: shocking cruelty, high visual drama, emotional torture, and a phenomenal twist cliffhanger where the victim calls the villain's bluff.",
+    "final": 8.76,
+    "llm_score": 9,
+    "standalone": 5,
+    "hook_in_first_3s": true,
+    "heuristic": 7.0
+  },
+  {
+    "rank": 9,
+    "episode": 41,
+    "segments": [
+      {
+        "ep": 41,
+        "start": 78.0,
+        "end": 96.09
+      },
+      {
+        "ep": 42,
+        "start": 0.0,
+        "end": 12.6
+      }
+    ],
+    "duration": 30.7,
+    "hook": "The priest asks 'Shall we?' just before a massive explosion rocks the cathedral.",
+    "cliffhanger": "Alexander steps through the smoke and a nobleman asks 'Who are you?'",
+    "why": "Incredible action hook with the explosion, excellent buildup, and a high-stakes cliffhanger.",
+    "final": 8.76,
+    "llm_score": 9,
+    "standalone": 5,
+    "hook_in_first_3s": true,
+    "heuristic": 7.0
+  },
+  {
+    "rank": 10,
+    "episode": 43,
+    "segments": [
+      {
+        "ep": 43,
+        "start": 86.0,
+        "end": 114.96000000000001
+      },
+      {
+        "ep": 44,
+        "start": 0.0,
+        "end": 31.0
+      }
+    ],
+    "duration": 60.0,
+    "hook": "Crown Official declares Duke Alexander was declared dead and his estate was transferred.",
+    "cliffhanger": "Catherine demands of Alexander, 'Do you know what this did to me?' across episodes.",
+    "why": "Exceptional vertical microdrama promo: complete narrative arc from escape cutoff to arrest and emotional confrontation.",
+    "final": 8.76,
+    "llm_score": 9,
+    "standalone": 5,
+    "hook_in_first_3s": true,
+    "heuristic": 7.0
+  },
+  {
+    "rank": 11,
+    "episode": 6,
+    "segments": [
+      {
+        "ep": 6,
+        "start": 92.1,
+        "end": 115.0
+      },
+      {
+        "ep": 7,
+        "start": 0.0,
+        "end": 24.5
+      }
+    ],
+    "duration": 47.4,
+    "hook": "The man states 'It is not much' as Juliana sits by the hearth.",
+    "cliffhanger": "An aristocratic woman arrives in a carriage and asks Juliana 'This is where you live now?'",
+    "why": "Fantastic transition into the next episode with an immediate antagonist, clear humiliation stakes, and a sharp cliffhanger.",
+    "final": 8.53,
+    "llm_score": 9,
+    "standalone": 5,
+    "hook_in_first_3s": true,
+    "heuristic": 6.0
+  },
+  {
+    "rank": 12,
+    "episode": 11,
+    "segments": [
+      {
+        "ep": 11,
+        "start": 84.2,
+        "end": 112.75
+      },
+      {
+        "ep": 12,
+        "start": 0.0,
+        "end": 30.0
+      }
+    ],
+    "duration": 58.5,
+    "hook": "Juliana cries out in panic as the constable pulls the gleaming pocket watch from the coat.",
+    "cliffhanger": "Clarissa glides past Gerald with a venomous smile as Alexander clenches a trembling fist.",
+    "why": "Exceptional promo. High-stakes frame-up reveal, immediate arrest threat, villain gloating, and a perfect unresolved cliffhanger.",
+    "final": 8.53,
+    "llm_score": 9,
+    "standalone": 5,
+    "hook_in_first_3s": true,
+    "heuristic": 6.0
+  },
+  {
+    "rank": 13,
+    "episode": 16,
+    "segments": [
+      {
+        "ep": 16,
+        "start": 71.0,
+        "end": 83.19
+      },
+      {
+        "ep": 17,
+        "start": 0.0,
+        "end": 25.7
+      }
+    ],
+    "duration": 37.9,
+    "hook": "Alexander talks about forgetting his past as a soldier.",
+    "cliffhanger": "Juliana asks Alexander if he would protect her even if there were ten men.",
+    "why": "Fantastic promo flow: spans the aftermath, transitions to episode 17, and ends on a compelling romantic cliffhanger.",
+    "final": 8.53,
+    "llm_score": 9,
+    "standalone": 5,
+    "hook_in_first_3s": true,
+    "heuristic": 6.0
+  },
+  {
+    "rank": 14,
+    "episode": 17,
+    "segments": [
+      {
+        "ep": 17,
+        "start": 108.3,
+        "end": 118.88
+      },
+      {
+        "ep": 18,
+        "start": 0.0,
+        "end": 19.8
+      }
+    ],
+    "duration": 30.4,
+    "hook": "Juliana reflects on knowing almost nothing about the man she married before a sudden fire cuts in.",
+    "cliffhanger": "A violent crash sounds as the burning bedroom door is kicked open by an unknown entity.",
+    "why": "Amazing escalation bridging romantic tension into a sudden life-or-death fire emergency with a violent cliffhanger.",
+    "final": 8.53,
+    "llm_score": 9,
+    "standalone": 5,
+    "hook_in_first_3s": true,
+    "heuristic": 6.0
+  },
+  {
+    "rank": 15,
+    "episode": 26,
+    "segments": [
+      {
+        "ep": 26,
+        "start": 109.2,
+        "end": 120.88
+      },
+      {
+        "ep": 27,
+        "start": 0.0,
+        "end": 31.4
+      }
+    ],
+    "duration": 43.1,
+    "hook": "Duchess commands Juliana not to move.",
+    "cliffhanger": "Duchess reveals her lost son wore the exact same ring to war.",
+    "why": "Exceptional vertical promo hook, clear stakes, high tension, and a massive identity cliffhanger.",
+    "final": 8.53,
+    "llm_score": 9,
+    "standalone": 5,
+    "hook_in_first_3s": true,
+    "heuristic": 6.0
+  },
+  {
+    "rank": 16,
+    "episode": 37,
+    "segments": [
+      {
+        "ep": 37,
+        "start": 134.0,
+        "end": 156.47
+      },
+      {
+        "ep": 38,
+        "start": 0.0,
+        "end": 17.3
+      }
+    ],
+    "duration": 39.8,
+    "hook": "Clarissa talks about how the whole county will watch Juliana pay for her mistakes.",
+    "cliffhanger": "A mysterious guard slips bread through the cell bars and a starving Juliana asks 'Why?'",
+    "why": "Fantastic escalation: moves from villainous gloating directly into the next episode's cliffhanger mystery with the guard.",
+    "final": 8.53,
+    "llm_score": 9,
+    "standalone": 5,
+    "hook_in_first_3s": true,
+    "heuristic": 6.0
+  },
+  {
+    "rank": 17,
+    "episode": 18,
+    "segments": [
+      {
+        "ep": 18,
+        "start": 84.0,
+        "end": 115.5
+      }
+    ],
+    "duration": 31.5,
+    "hook": "Juliana screams Alexander's name as he tackles her to the floor from a falling beam.",
+    "cliffhanger": "Alexander leaps through the burning window frame, carrying Juliana out into the night amid an explosion.",
+    "why": "Explosive action hook, high stakes, and an incredible cinematic window-crash climax/cliffhanger.",
+    "final": 8.42,
+    "llm_score": 9,
+    "standalone": 5,
+    "hook_in_first_3s": true,
+    "heuristic": 5.5
+  },
+  {
+    "rank": 18,
+    "episode": 1,
+    "segments": [
+      {
+        "ep": 1,
+        "start": 90.9,
+        "end": 137.5
+      }
+    ],
+    "duration": 46.6,
+    "hook": "The Matriarch shouts 'Enough!' and tells Juliana she has embarrassed the family.",
+    "cliffhanger": "Juliana's eyes harden with suppressed fury as strings swell to a black screen.",
+    "why": "Great high-stakes emotional beat with a definitive cinematic cliffhanger ending.",
+    "final": 8.4,
+    "llm_score": 8,
+    "standalone": 4,
+    "hook_in_first_3s": true,
+    "heuristic": 9.5
+  },
+  {
+    "rank": 19,
+    "episode": 15,
+    "segments": [
+      {
+        "ep": 15,
+        "start": 44.8,
+        "end": 86.0
+      }
+    ],
+    "duration": 41.2,
+    "hook": "Thug shoves Juliana hard onto the wet stone path, sending her crashing down.",
+    "cliffhanger": "Violence hangs on a knife's edge as Alexander faces the thugs before a cello swell cut.",
+    "why": "Strong opening action hook, clear stakes, and a high-tension cliffhanger that leaves viewers wanting more.",
+    "final": 8.4,
+    "llm_score": 8,
+    "standalone": 5,
+    "hook_in_first_3s": true,
+    "heuristic": 11.5
+  },
+  {
+    "rank": 20,
+    "episode": 22,
+    "segments": [
+      {
+        "ep": 22,
+        "start": 82.5,
+        "end": 128.8
+      }
+    ],
+    "duration": 46.3,
+    "hook": "Lady Juliana asks where the West Wing is and sneaks into Ashbury Manor.",
+    "cliffhanger": "Juliana asks the dying Duchess who has been treating her as she gasps for air.",
+    "why": "Strong stakes with infiltration, discovery of the dying Duchess, and an intense cliffhanger question.",
+    "final": 8.4,
+    "llm_score": 8,
+    "standalone": 5,
+    "hook_in_first_3s": true,
+    "heuristic": 10.5
+  },
+  {
+    "rank": 21,
+    "episode": 43,
+    "segments": [
+      {
+        "ep": 43,
+        "start": 16.2,
+        "end": 75.2
+      }
+    ],
+    "duration": 59.0,
+    "hook": "A guard's sword grounds between Rupert and the guards as Rupert claims to be the Duke.",
+    "cliffhanger": "Alexander tells Rupert 'You sold my men to the enemy' right before Rupert denies it.",
+    "why": "Strong opening conflict, clear stakes, and a compelling betrayal reveal, though ending slightly before final resolution.",
+    "final": 8.4,
+    "llm_score": 8,
+    "standalone": 5,
+    "hook_in_first_3s": true,
+    "heuristic": 11.0
+  },
+  {
+    "rank": 22,
+    "episode": 4,
+    "segments": [
+      {
+        "ep": 4,
+        "start": 123.0,
+        "end": 151.4
+      },
+      {
+        "ep": 5,
+        "start": 0.0,
+        "end": 20.8
+      }
+    ],
+    "duration": 49.2,
+    "hook": "Gerald stares in speechless shock as Juliana tells him she would rather choose her own life.",
+    "cliffhanger": "Lord Ashcroft states she leaves as no daughter of mine after revoking her inheritance.",
+    "why": "Excellent standalone narrative flow from the wedding confrontation straight into the brutal family disownment.",
+    "final": 8.31,
+    "llm_score": 9,
+    "standalone": 5,
+    "hook_in_first_3s": true,
     "heuristic": 5.0
+  },
+  {
+    "rank": 23,
+    "episode": 40,
+    "segments": [
+      {
+        "ep": 40,
+        "start": 100.0,
+        "end": 110.08
+      },
+      {
+        "ep": 41,
+        "start": 0.0,
+        "end": 14.0
+      }
+    ],
+    "duration": 24.1,
+    "hook": "Rupert tells Catherine she looks more queen than bride.",
+    "cliffhanger": "Catherine suddenly halts the ceremony to show what happens to a woman who defies them.",
+    "why": "Fantastic hook of vanity, excellent villain dynamics, and a killer cliffhanger interrupting the wedding.",
+    "final": 8.31,
+    "llm_score": 9,
+    "standalone": 5,
+    "hook_in_first_3s": true,
+    "heuristic": 5.0
+  },
+  {
+    "rank": 24,
+    "episode": 36,
+    "segments": [
+      {
+        "ep": 36,
+        "start": 117.5,
+        "end": 159.8
+      }
+    ],
+    "duration": 42.3,
+    "hook": "Mother cries out that they called Juliana a witch in a kangaroo court.",
+    "cliffhanger": "Alexander learns his wife is scheduled to be executed after Rupert and Catherine's wedding.",
+    "why": "Fantastic villain exposure, clear high stakes of a wrongful death sentence, and a shocking wedding timeline.",
+    "final": 8.29,
+    "llm_score": 8,
+    "standalone": 5,
+    "hook_in_first_3s": true,
+    "heuristic": 8.5
+  },
+  {
+    "rank": 25,
+    "episode": 34,
+    "segments": [
+      {
+        "ep": 34,
+        "start": 129.3,
+        "end": 184.2
+      }
+    ],
+    "duration": 54.9,
+    "hook": "The Judge asks if Juliana administered remedies without a licensed physician's approval.",
+    "cliffhanger": "The judge stands up to towering height to formally deliver his final judgment on Lady Juliana.",
+    "why": "Excellent standalone flow showing defiance, emotional reactions, and a massive sentencing cliffhanger.",
+    "final": 8.18,
+    "llm_score": 8,
+    "standalone": 5,
+    "hook_in_first_3s": true,
+    "heuristic": 8.0
   }
 ]

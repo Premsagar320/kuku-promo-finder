@@ -36,7 +36,7 @@ Below are {n} candidate clips from this episode. Timestamps are [E<episode> mm:s
 
 Return ONLY a JSON list with one object per candidate, in this form:
 [{{"id": "<candidate id>", "hook": "<what happens in first 3s, <=20 words>", "hook_in_first_3s": true/false,
-   "cliffhanger": "<what is left unresolved at the cut, <=20 words>", "standalone_score": 1-5,
+   "cliffhanger": "<what is left unresolved at the cut, <=20 words>", "standalone": 1-5,
    "score": 1-10, "why": "<one line why it works or not>"}}]
 Be strict: most candidates should score 6 or lower. Use only what is written above; do not invent plot."""
 
@@ -84,16 +84,9 @@ def mock_scores(cands, by_num):
     out = {}
     for c in cands:
         lines = c["text"].splitlines()
-        out[c["id"]] = {
-            "id": c["id"],
-            "hook": lines[0][:120] if lines else "",
-            "hook_in_first_3s": c["hook_h"] >= 3,
-            "cliffhanger": lines[-1][:120] if lines else "",
-            "standalone_score": 3,
-            "standalone": 3,
-            "score": round(min(10, c["heuristic"] * 0.9), 1),
-            "why": "rule-based score only (mock mode)",
-        }
+        out[c["id"]] = {"id": c["id"], "hook": lines[0][:120] if lines else "", "hook_in_first_3s": c["hook_h"] >= 3,
+                        "cliffhanger": lines[-1][:120] if lines else "", "standalone": 3,
+                        "score": round(min(10, c["heuristic"] * 0.9), 1), "why": "rule-based score only (mock mode)"}
     return out
 
 
@@ -103,30 +96,12 @@ def score_episode(ep_num, cands, by_num, cache):
         return {}
     if PROVIDER == "mock":
         return mock_scores(cands, by_num)
-
-    # First check: can all candidates be resolved from cache?
-    id_map = {}
-    for v in cache.values():
-        if isinstance(v, list):
-            for r in v:
-                if isinstance(r, dict) and "id" in r:
-                    id_map[r["id"]] = r
-
-    if all(c["id"] in id_map for c in cands):
-        res = {}
-        for c in cands:
-            r = dict(id_map[c["id"]])
-            r["standalone_score"] = r.get("standalone_score", r.get("standalone", 3))
-            res[c["id"]] = r
-        return res
-
     ep = by_num[ep_num]
     prev = by_num.get(ep_num - 1)
     prev_txt = (prev["continuity"] or prev["logline"]) if prev else "(this is the first episode)"
     blocks = "\n\n".join(f"### {c['id']}  ({c['duration']}s)\n{c['text']}" for c in cands)
     prompt = PROMPT.format(ep=ep_num, logline=ep["logline"], prev=prev_txt, n=len(cands), blocks=blocks)
     key = hashlib.sha256((MODEL + prompt).encode()).hexdigest()
-
     if key in cache:
         rows = cache[key]
     else:
@@ -143,10 +118,4 @@ def score_episode(ep_num, cands, by_num, cache):
         cache[key] = rows
         _save_cache(cache)
         time.sleep(SLEEP)
-
-    out = {}
-    for r in rows:
-        if isinstance(r, dict) and "id" in r:
-            r["standalone_score"] = r.get("standalone_score", r.get("standalone", 3))
-            out[r["id"]] = r
-    return out
+    return {r["id"]: r for r in rows if isinstance(r, dict) and "id" in r}
