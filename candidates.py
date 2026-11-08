@@ -21,6 +21,14 @@ SOUND_CLIFF = ["sting", "ominous", "cliffhanger", "slam", "swell", "gasp", "sile
 WEAK_START = re.compile(r"^(he|she|they|it|that|this|and|but|so|then|him|her|them)\b", re.I)
 
 
+def has_long_silence(items, max_silence=5.0):
+    """Check if there is a gap longer than max_silence between consecutive items."""
+    for i in range(len(items) - 1):
+        if items[i + 1]["start"] - items[i]["end"] > max_silence:
+            return True
+    return False
+
+
 def _dialogue(items):
     return [it for it in items if it["kind"] == "dialogue"]
 
@@ -112,6 +120,8 @@ def single_episode_candidates(ep, top_k=10):
             win = _seg_items(ep, s, e)
             if len(_dialogue(win)) < 3:
                 continue
+            if has_long_silence(win):
+                continue
             h = hook_score(items, s)
             c = cliff_score(items, e, ep["duration"])
             bonus = 0.0
@@ -134,7 +144,7 @@ def single_episode_candidates(ep, top_k=10):
 
 
 def cross_episode_candidates(ep_a, ep_b, top_k=2):
-    """Tail of ep_a + head of ep_b. Total 20-60 s."""
+    """Tail of ep_a (last 15-30s) + head of ep_b (first 15-30s). Total 20-60 s."""
     ia, ib = ep_a["items"], ep_b["items"]
     tails = sorted({it["start"] for it in ia if it["kind"] == "dialogue" and 6 <= ep_a["duration"] - it["start"] <= 30})
     heads = sorted({it["end"] for it in ib if it["kind"] in ("dialogue", "action") and 8 <= it["end"] <= 40})
@@ -143,6 +153,10 @@ def cross_episode_candidates(ep_a, ep_b, top_k=2):
         for e in heads:
             d = (ep_a["duration"] - s) + e
             if d < MIN_LEN or d > MAX_LEN:
+                continue
+            win_a = _seg_items(ep_a, s, ep_a["duration"])
+            win_b = _seg_items(ep_b, 0.0, e)
+            if has_long_silence(win_a) or has_long_silence(win_b):
                 continue
             h = hook_score(ia, s)
             c = cliff_score(ib, e, ep_b["duration"])

@@ -14,10 +14,22 @@ Finds 20-60 s promo clips (hook in first 3 s, cliffhanger ending, understandable
 ```bash
 python3 -m venv venv && source venv/bin/activate
 pip install -r requirements.txt
-cp .env.example .env        # then put your key in .env
-python run.py --input "data/<show folder>" --out outputs            # all episodes
-python run.py --input "data/<show folder>" --out outputs --limit 3  # quick test
-LLM_PROVIDER=mock python run.py --input "data/<show folder>"        # no key: rules only
+
+# Create .env with your Gemini API key:
+# GEMINI_API_KEY=your_gemini_api_key
+# MODEL_NAME=gemini-2.5-flash
+
+# 1. Test parse.py on all files (prints scene counts and total duration per episode):
+python parse.py data
+
+# 2. Test run.py on first 3 episodes:
+python run.py --input data --out outputs --limit 3
+
+# 3. Full run on all episodes:
+python run.py --input data --out outputs
+
+# Optional: rule-based mock mode without calling LLM API
+LLM_PROVIDER=mock python run.py --input data --out outputs
 ```
 Swap model: change `MODEL_NAME` (or `LLM_PROVIDER=openai` with `OPENAI_BASE_URL`, `OPENAI_API_KEY`; `pip install openai`).
 
